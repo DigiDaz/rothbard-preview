@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open the Rothbard app on your phone</title>
+<script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+<style>
+  :root{--linen:#F0EEE7;--ink:#33322F;--sienna:#C9683F;--sInk:#A8502E}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:radial-gradient(900px 500px at 50% -10%, #fff, var(--linen) 60%);min-height:100vh;font-family:'Inter',system-ui,sans-serif;color:var(--ink);display:flex;align-items:center;justify-content:center;padding:32px}
+  .wrap{max-width:480px;width:100%;text-align:center}
+  .k{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--sInk);font-weight:500}
+  h1{font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:32px;letter-spacing:-.02em;margin:14px 0 8px}
+  .sub{color:#6b6960;font-size:15px;line-height:1.6;margin-bottom:26px}
+  #qr{display:inline-block;padding:18px;background:#fff;border-radius:20px;border:1px solid rgba(54,53,47,.12);box-shadow:0 16px 40px -22px rgba(54,53,47,.5)}
+  #qr img,#qr canvas{display:block}
+  .url{font-family:ui-monospace,monospace;font-size:12px;color:#6b6960;margin-top:16px;word-break:break-all}
+  ol{text-align:left;max-width:420px;margin:26px auto 0;font-size:14px;line-height:1.7;color:#3a3a36;padding-left:20px}
+  ol b{color:var(--ink)}
+  .ft{margin-top:22px;font-size:12px;color:#9c998f}
+</style></head>
+<body><div class="wrap">
+  <div class="k">Rothbard Group</div>
+  <h1>Open the app on your phone</h1>
+  <div class="sub">For the real native feel: scrolling, gestures, transitions.</div>
+  <div id="qr"></div>
+  <div class="url">exp://2i6-jbq-anonymous-8081.exp.direct</div>
+  <ol>
+    <li>Install <b>Expo Go</b> from the App Store (iPhone) or Play Store (Android).</li>
+    <li><b>iPhone:</b> open the <b>Camera</b> app and point it at the QR code, then tap the banner. <b>Android:</b> open <b>Expo Go</b> and tap <b>Scan QR code</b>.</li>
+    <li>The app loads inside Expo Go. The first load takes around a minute while it builds, then it is instant.</li>
+  </ol>
+  <div class="ft">This is a live session. It works while the dev server is running.</div>
+</div>
+<script>new QRCode(document.getElementById('qr'),{text:'exp://2i6-jbq-anonymous-8081.exp.direct',width:220,height:220,colorDark:'#2f2e29',colorLight:'#ffffff'});</script>
+</body></html>
